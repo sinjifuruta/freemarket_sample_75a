@@ -91,8 +91,8 @@ ActiveRecord::Schema.define(version: 2020_06_08_020111) do
     t.integer "buyer_id"
     t.bigint "category_id", null: false
     t.bigint "brand_id"
-    t.integer "favorites_count"
     t.integer "image_id"
+    t.integer "favorites_count"
     t.index ["brand_id"], name: "index_items_on_brand_id"
     t.index ["category_id"], name: "index_items_on_category_id"
     t.index ["user_id"], name: "index_items_on_user_id"
